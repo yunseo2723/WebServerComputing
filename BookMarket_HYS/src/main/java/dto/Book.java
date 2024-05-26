@@ -16,6 +16,7 @@ public class Book implements Serializable {
 	private String releaseDate;
 	private String condition;
 	private String filename;
+	private int quantity;
 
 	public Book() {
 		super();
@@ -24,6 +25,12 @@ public class Book implements Serializable {
 		this.bookId=bookId;
 		this.name=name;
 		this.unitPrice=unitPrice;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 	public String getBookId() {
 		return bookId;
